@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultra Domestic Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- NAVBAR -->
+<nav class="bg-blue-700 text-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="bg-white text-blue-700 px-3 py-1 rounded">
+        Cart: <span id="cartCount">0</span>
+    </div>
+
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold tracking-wide">
+      Ultra Domestic
+    </h1>
+
+    <!-- Menu -->
+    <ul class="flex space-x-8 text-lg">
+      <li>
+        <a href="index.html"
+           class="hover:text-yellow-300 transition duration-200">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="products.html"
+           class="hover:text-yellow-300 transition duration-200">
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="categories.html"
+           class="hover:text-yellow-300 transition duration-200">
+          Categories
+        </a>
+      </li>
+      <li>
+        <a href="contact.html"
+           class="hover:text-yellow-300 transition duration-200">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-white text-center py-10">
+  <h2 class="text-3xl font-bold">Bathroom & Cleaning Essentials</h2>
+  <p class="text-gray-600 mt-2">Top brands • Best quality • Affordable prices</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+  <!-- PRODUCT CARD -->
+  <div class="bg-white rounded shadow hover:shadow-xl transform hover:scale-105 transition">
+    <img src="images/shampoo.webp" class="h-40 mx-auto mt-4">
+    <div class="p-4 text-center">
+      <h3 class="font-bold">Karthickaa Shampoo</h3>
+      <p class="text-gray-600">₹120</p>
+      <button onclick="addToCart()" 
+        class="mt-3 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transform hover:scale-105 transition">
+    <img src="images/soap.jpg" class="h-40 mx-auto mt-4">
+    <div class="p-4 text-center">
+      <h3 class="font-bold">Mysore Sandhal Soap</h3>
+      <p class="text-gray-600">₹55</p>
+      <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-1 rounded">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transform hover:scale-105 transition">
+    <img src="images/toothpaste.jpg" class="h-40 mx-auto mt-4">
+    <div class="p-4 text-center">
+      <h3 class="font-bold">Colgate Toothpaste</h3>
+      <p class="text-gray-600">₹90</p>
+      <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-1 rounded">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transform hover:scale-105 transition">
+    <img src="images/cleaner.jpg" class="h-40 mx-auto mt-4">
+    <div class="p-4 text-center">
+      <h3 class="font-bold">Lizol Floor Cleaner</h3>
+      <p class="text-gray-600">₹150</p>
+      <button onclick="addToCart()" class="mt-3 bg-red-600 text-white px-4 py-1 rounded">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- VIEW MORE -->
+    <div class="text-center my-6">
+        <a href="products.html" class="text-blue-600 font-semibold underline">
+        View All Products --→
+        </a>
+    </div>
+
+<!-- FOOTER -->
+    <footer class="bg-blue-700 text-white text-center p-4">
+        Kishore S | 1st Year CSE | Frontend Technology Project
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | Ultra Domestic Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- NAVBAR -->
+<nav class="bg-blue-700 text-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Ultra Domestic</h1>
+
+    <ul class="flex space-x-8 text-lg">
+      <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="products.html" class="hover:text-yellow-300">Products</a></li>
+      <li><a href="categories.html" class="hover:text-yellow-300">Categories</a></li>
+      <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+    </ul>
+
+    <div class="bg-white text-blue-700 px-3 py-1 rounded">
+      Cart: <span id="cartCount">0</span>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE TITLE -->
+<section class="text-center py-10 bg-white">
+  <h2 class="text-3xl font-bold">All Products</h2>
+  <p class="text-gray-600 mt-2">
+    Bathroom & Cleaning Essentials
+  </p>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+  <!-- PRODUCT CARD -->
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/western toilet.webp" class="h-40 mx-auto mb-4" alt="Shampoo">
+    <h3 class="font-bold">Western Toilet</h3>
+    <p class="text-gray-600">₹7,777</p>
+    <button onclick="addToCart()"
+      class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/clinicplus.webp" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Clinicplus</h3>
+    <p class="text-gray-600">₹199</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/soap.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Mysore Sandhal Soap</h3>
+    <p class="text-gray-600">₹55</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/soap2.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Lifebuoy Soap</h3>
+    <p class="text-gray-600">₹44</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/toothpaste1.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Dabour Red Toothpaste</h3>
+    <p class="text-gray-600">₹99</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/sensodyne.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Sensodyne</h3>
+    <p class="text-gray-600">₹111</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/cleaner.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Lizol Floor Cleaner</h3>
+    <p class="text-gray-600">₹123</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="bg-white rounded shadow hover:shadow-xl transition text-center p-4">
+    <img src="images/mop.jpg" class="h-40 mx-auto mb-4">
+    <h3 class="font-bold">Floor Mop</h3>
+    <p class="text-gray-600">₹299</p>
+    <button onclick="addToCart()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded">
+      Add to Cart
+    </button>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-blue-700 text-white text-center p-4 mt-8">
+  Kishore S | 1st Year CSE | Frontend Technology Project
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
